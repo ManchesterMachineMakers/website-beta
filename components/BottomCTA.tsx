@@ -10,19 +10,18 @@ export const BottomCTA: React.FC = () => {
       )}
     >
       <h3 className={cn("text-[40px] mb-4 font-bold")}>
-        Your train has arrived!
+        Welcome to the land of ducks!
       </h3>
       <p className={cn("text-xl text-center max-w-xl text-opacity-90")}>
-        Join thousands of developers deploying hundreds of thousands of
-        applications effortlessly on Railway.
+        We're a high school robotics team out of Manchester, Vermont building cool robots for the FIRST Tech Challenge.
       </p>
       <Link
-        href="https://dev.new"
+        href="https://manchestermachinemakers.org/interested-in-our-team/"
         className={cn(
           "no-underline bg-white text-pink-500 py-3 px-5 rounded-lg mt-8 font-semibold text-xl"
         )}
       >
-        Start a New Project
+        Join our team today!
       </Link>
     </div>
   )

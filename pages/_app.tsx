@@ -36,6 +36,7 @@ const RailwayBlog = ({ Component, pageProps }: AppProps) => {
             font-family: ${inter.style.fontFamily};
           }
         `}</style>
+        <link rel="icon" href="/cropped-logo.webp"/>
       </Head>
 
       <Component {...pageProps} />

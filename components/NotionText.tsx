@@ -81,7 +81,7 @@ export const NotionText: React.FC<{
                 ) : (
                   <Link
                     href={text.link.url}
-                    className="underline hover:text-pink-600"
+                    className="underline hover:text-primary"
                   >
                     <RenderTextContent
                       isCode={code}

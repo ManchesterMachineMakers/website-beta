@@ -13,6 +13,7 @@ const generateColorShades = (name) =>
 const customColors = {
   foreground: `var(--foreground)`,
   background: `var(--background)`,
+  primary: "hsl(2, 100%, 71%)",
   secondaryBg: `var(--secondaryBg)`,
   gray: generateColorShades("gray"),
   pink: generateColorShades("pink"),

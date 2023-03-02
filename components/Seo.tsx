@@ -9,11 +9,11 @@ export interface Props extends NextSeoProps {
   author?: string
 }
 
-const title = "Railway Blog"
-export const url = "https://blog.railway.app"
-const description = "Blog posts from the Railway team"
+const title = "Manchester Machune Makers Blog"
+export const url = "https://manchestermachinemakers.org"
+const description = "Blog posts from the Manchester Machine Makers robotics team"
 const image =
-  "https://og.railway.app/api/image?fileType=png&layoutName=docs&Page=Railway+Blog&Url=blog.railway.app"
+  "https://og.railway.app/api/image?fileType=png&layoutName=docs&Page=Manchester+Machine+Makers+Blog&Url=manchestermachinemakers.org"
 
 const config: DefaultSeoProps = {
   title,
@@ -28,7 +28,7 @@ const config: DefaultSeoProps = {
     },
   },
   twitter: {
-    handle: "@Railway_App",
+    handle: "@ftc16221",
     cardType: "summary_large_image",
   },
 }
