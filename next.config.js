@@ -1,13 +1,8 @@
-module.exports = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  images: {
-    domains: [
-      "user-images.githubusercontent.com",
-      "og.railway.app",
-      "s3.us-west-2.amazonaws.com",
-      "res.cloudinary.com",
-    ],
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    appDir: true,
   },
 }
+
+module.exports = nextConfig

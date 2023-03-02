@@ -1,40 +1,38 @@
-# Railway Blog
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This repository contains the source code for the [Railway blog](https://blog.railway.app/). We use a [NextJS](https://nextjs.org/) app with [Notion](https://www.notion.so/) as our CMS.
+## Getting Started
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Frailwayapp%2Fblog&envs=NOTION_API_TOKEN%2CPOSTS_TABLE_ID&NOTION_API_TOKENDesc=The+token+for+your+Notion+integration&POSTS_TABLE_IDDesc=The+database+ID+for+the+table+containing+your+posts)
+First, run the development server:
 
-## ✨ Features
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-- NextJS
-- TypeScript
-- TailwindCSS
-- Notion
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 💁‍♀️ How to use
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-We also have a [detailed guide](https://blog.railway.app/p/notion-public-api) on our blog to help users deploy a similar blog using Railway.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-### Step 1: Create a notion DB
-You can find instructions on how to [set up the Notion Database](https://blog.railway.app/p/next-notion-blog#setting-up-our-cms-on-notion), TLDR you need the following fields, in an Inline Database on a page, it needs to be inline, else it won't work
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-- Page (Title) - The page containing a post
-- Slug (Text) - The URL of a post
-- Published (Checkbox) - Only published blog posts show up on the website
-- Date (Date) - The date the post was published
-- Authors (Person) - A list of users that wrote the post
-- Image (Text) - The URL of the meta image for a post
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-### Step 2: Create a Notion Integration
+## Learn More
 
-This will be done on Notion's [Manage Integration page](https://www.notion.so/my-integrations), copy the token, this will be used as `NOTION_API_TOKEN` 
+To learn more about Next.js, take a look at the following resources:
 
-### Step 3: Get a hold of your Database ID
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can get this from the URL of the page, whose structure is `https://www.notion.so/<user>/<database_Id>?v=....` , the database_Id will be used as `POSTS_TABLE_ID` 
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-That is it, Just make sure the properties are not empty
+## Deploy on Vercel
 
-## 📝 Notes
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-This blog is heavily based on [this example](https://github.com/ijjk/notion-blog) by JJ Kasper.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
